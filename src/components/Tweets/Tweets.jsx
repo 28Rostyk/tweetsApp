@@ -47,7 +47,7 @@ const Tweets = () => {
 
   useEffect(() => {
     fetchTweets();
-  }, [fetchTweets, allTweets]);
+  }, [fetchTweets, allTweets, filter]);
 
   const handleLoadMore = useCallback(() => {
     setPage(prevPage => prevPage + 1);

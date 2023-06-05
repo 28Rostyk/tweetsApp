@@ -11,11 +11,17 @@ const TweetsList = ({
 }) => {
   return (
     <>
-      <select value={filter} onChange={handleFilterChange}>
-        <option value="Show All">Show All</option>
-        <option value="Follow">Follow</option>
-        <option value="Followings">Followings</option>
-      </select>
+      <div className={styles.container_select}>
+        <select
+          className={styles.select}
+          value={filter}
+          onChange={handleFilterChange}
+        >
+          <option value="Show All">Show All</option>
+          <option value="Follow">Follow</option>
+          <option value="Followings">Followings</option>
+        </select>
+      </div>
 
       <ul className={styles.list}>
         {filter
@@ -50,7 +56,7 @@ const TweetsList = ({
                       }
                       className={`${styles.btn} ${followButtonStyle}`}
                     >
-                      {item.followStatus ? 'Follow' : 'Following'}
+                      {item.followStatus === 'Follow' ? 'Follow' : 'Following'}
                     </button>
                   </div>
                 </li>
