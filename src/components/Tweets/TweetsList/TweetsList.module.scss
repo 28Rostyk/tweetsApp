@@ -1,0 +1,119 @@
+.list {
+  font-family: 'Montserrat';
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px;
+  padding: 0 20px;
+
+  &_item {
+    width: 380px;
+    height: 480px;
+
+    background: linear-gradient(
+      114.99deg,
+      #471ca9 -0.99%,
+      #5736a3 54.28%,
+      #4b2a99 78.99%
+    );
+    box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+    border-radius: 20px;
+    position: relative;
+  }
+}
+
+.container_logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.container_bgImg {
+  display: flex;
+  justify-content: center;
+  padding-top: 28px;
+}
+
+.container_boy {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.container_boy::before {
+  content: '';
+  width: 100%;
+  height: 8px;
+  background: #ebd8ff;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
+    inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
+  position: absolute;
+  top: 35px;
+}
+
+.wrapperImg {
+  width: 64px;
+  height: 64px;
+  border: 8px solid #ebd8ff;
+  border-radius: 50%;
+  z-index: 10;
+  background: linear-gradient(
+    114.99deg,
+    #471ca9 -0.99%,
+    #5736a3 54.28%,
+    #4b2a99 78.99%
+  );
+}
+
+.boyImg {
+  width: 64px;
+  height: 64px;
+  // border: 8px solid #ebd8ff;
+  // border-radius: 50%;
+}
+
+.textWrapper {
+  text-align: center;
+  padding-top: 26px;
+}
+
+.text {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ebd8ff;
+}
+
+.text:first-child {
+  margin-bottom: 16px;
+}
+
+.btn {
+  font-family: inherit;
+  margin-top: 26px;
+
+  padding: 14px 28px;
+
+  width: 196px;
+  height: 50px;
+
+  // background: #ebd8ff;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  border-radius: 10.3108px;
+
+  text-transform: uppercase;
+  color: #373737;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.followButton {
+  background-color: #ebd8ff; /* Колір для стану "Follow" */
+}
+
+.followingButton {
+  background-color: #5cd3a8; /* Колір для стану "Following" */
+}

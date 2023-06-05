@@ -4,12 +4,12 @@ import styles from './SharedLayout.module.scss';
 
 const SharedLayout = () => {
   return (
-    <div className={styles.container}>
+    <>
       <Header />
-      <main>
+      <main className={styles.container}>
         <Outlet />
       </main>
-    </div>
+    </>
   );
 };
 

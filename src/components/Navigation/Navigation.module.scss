@@ -1,0 +1,15 @@
+.menu {
+  display: flex;
+  gap: 20px;
+  padding-left: 40px;
+}
+
+.link {
+  font-size: 28px;
+  color: black;
+
+  &:global.active {
+    color: rgb(3, 169, 244);
+    text-decoration: underline;
+  }
+}
