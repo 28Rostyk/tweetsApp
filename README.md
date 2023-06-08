@@ -4,6 +4,6 @@ Available Scripts In the project directory, you can run:
 
 npm start
 
-the store is on github pages - https://28rostyk.github.io/MyShopsFront/
+the store is on github pages - https://28rostyk.github.io/tweetsApp/
 
 
