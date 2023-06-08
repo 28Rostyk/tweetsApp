@@ -5,7 +5,6 @@ const instance = axios.create({
 });
 
 export const getAllTweets = async (page = 1, limit) => {
-  console.log(limit);
   const { data } = await instance.get('/users', {
     params: {
       page,

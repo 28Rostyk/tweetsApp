@@ -26,6 +26,12 @@ const TweetsList = ({
       <ul className={styles.list}>
         {filter
           ? filteredTweets.map(item => {
+              const formatNumber = number => {
+                const parts = number.toString().split('.');
+                parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+                return parts.join('.');
+              };
+              const formatFollowers = formatNumber(item.followers);
               const followButtonStyle =
                 item.followStatus === 'Follow'
                   ? styles.followButton
@@ -49,7 +55,7 @@ const TweetsList = ({
                   </div>
                   <div className={styles.textWrapper}>
                     <p className={styles.text}>{item.tweets} TWEETS</p>
-                    <p className={styles.text}>{item.followers} FOLLOWERS</p>
+                    <p className={styles.text}>{formatFollowers} FOLLOWERS</p>
                     <button
                       onClick={() =>
                         handleFollow(item.id, item.followStatus, item.followers)
@@ -63,6 +69,12 @@ const TweetsList = ({
               );
             })
           : allTweets.map(item => {
+              const formatNumber = number => {
+                const parts = number.toString().split('.');
+                parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+                return parts.join('.');
+              };
+              const formatFollowers = formatNumber(item.followers);
               const followButtonStyle =
                 item.followStatus === 'Follow'
                   ? styles.followButton
@@ -86,7 +98,7 @@ const TweetsList = ({
                   </div>
                   <div className={styles.textWrapper}>
                     <p className={styles.text}>{item.tweets} TWEETS</p>
-                    <p className={styles.text}>{item.followers} FOLLOWERS</p>
+                    <p className={styles.text}>{formatFollowers} FOLLOWERS</p>
                     <button
                       onClick={() =>
                         handleFollow(item.id, item.followStatus, item.followers)

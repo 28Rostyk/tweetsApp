@@ -1,8 +1,11 @@
 .tweets {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .goBack {
+  font-family: 'Montserat';
+  font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +13,10 @@
   border: none;
   font-size: 20px;
   color: #8c9eff;
+
+  &:hover {
+    color: black;
+  }
 }
 
 .container_btn {
