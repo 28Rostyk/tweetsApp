@@ -5,11 +5,11 @@ import {
   fetchUpdateTweets,
 } from 'redux/tweets/tweetsOperation';
 import { getAllTweets } from 'redux/tweets/tweetsSelector';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import TweetsList from './TweetsList/TweetsList';
 
-import goBack from '../../icon/arrow-back.svg';
+import goBack from '../../assets/icon/arrow-back.svg';
 
 import styles from './Tweets.module.scss';
 
@@ -17,7 +17,7 @@ const Tweets = () => {
   const [page, setPage] = useState(1);
   const dispatch = useDispatch();
   const allTweets = useSelector(getAllTweets);
-  const location = useLocation();
+
   const navigate = useNavigate();
   const limit = 3;
 
@@ -59,7 +59,9 @@ const Tweets = () => {
     }
   }, [fetchTweets, page]);
 
-  const handleClick = () => navigate(location?.state?.from ?? '/home');
+  const handleClick = () => {
+    navigate(-1);
+  };
 
   const handleFollow = (itemId, followStatus, followers) => {
     if (followStatus === 'Follow') {

@@ -1,4 +1,4 @@
-import LogoIcon from '../../icon/LogoIcon';
+import LogoIcon from '../../assets/icon/LogoIcon';
 import { NavLink } from 'react-router-dom';
 
 const Logo = () => {

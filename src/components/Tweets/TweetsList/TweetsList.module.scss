@@ -30,9 +30,11 @@
 }
 
 .container_bgImg {
-  display: flex;
-  justify-content: center;
-  padding-top: 28px;
+  background-image: url(../../../assets/image/picture.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-top: 28px;
+  padding-top: 178px;
 }
 
 .container_boy {
@@ -53,17 +55,18 @@
 }
 
 .wrapperImg {
-  width: 64px;
-  height: 64px;
-  border: 8px solid #ebd8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 80px;
+  position: relative;
+  background: #ebd8ff;
   border-radius: 50%;
-  z-index: 10;
-  background: linear-gradient(
-    114.99deg,
-    #471ca9 -0.99%,
-    #5736a3 54.28%,
-    #4b2a99 78.99%
-  );
+  box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
+    inset 0px -2.19582px 4.39163px #ae7be3,
+    inset 0px 4.39163px 3.29372px #fbf8ff;
 }
 
 .boyImg {
@@ -106,6 +109,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+  border: none;
 }
 
 .followButton {
