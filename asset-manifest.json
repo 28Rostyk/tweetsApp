@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tweetsApp/static/css/main.8febcc4a.css",
-    "main.js": "/tweetsApp/static/js/main.c1eff6eb.js",
+    "main.css": "/tweetsApp/static/css/main.e1b88557.css",
+    "main.js": "/tweetsApp/static/js/main.f23eebde.js",
     "static/media/background.jpg": "/tweetsApp/static/media/background.5857e449c47d1086b009.jpg",
     "static/media/picture.png": "/tweetsApp/static/media/picture.b186e544641a66e17d83.png",
     "static/media/Logo.svg": "/tweetsApp/static/media/Logo.e917114d7945c04c85a8946a331d28b6.svg",
     "index.html": "/tweetsApp/index.html",
     "static/media/arrow-back.svg": "/tweetsApp/static/media/arrow-back.a70085ac25b73b14725924afc2ddbef3.svg",
-    "main.8febcc4a.css.map": "/tweetsApp/static/css/main.8febcc4a.css.map",
-    "main.c1eff6eb.js.map": "/tweetsApp/static/js/main.c1eff6eb.js.map"
+    "main.e1b88557.css.map": "/tweetsApp/static/css/main.e1b88557.css.map",
+    "main.f23eebde.js.map": "/tweetsApp/static/js/main.f23eebde.js.map"
   },
   "entrypoints": [
-    "static/css/main.8febcc4a.css",
-    "static/js/main.c1eff6eb.js"
+    "static/css/main.e1b88557.css",
+    "static/js/main.f23eebde.js"
   ]
 }
